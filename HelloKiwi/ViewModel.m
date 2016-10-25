@@ -13,7 +13,7 @@
 @implementation ViewModel
 
 - (NSString *)doCalculate:(NSString *)num1 with:(NSString *)num2 {
-    return @""
+    return @"";
 }
 
 @end
