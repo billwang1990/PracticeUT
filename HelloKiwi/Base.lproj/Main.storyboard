@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OO5-O9-koS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="7Xp-Cx-H5x"/>
+                                    <constraint firstAttribute="height" constant="30" id="mdg-gm-ya0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kow-24-4ci">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-9O-SXk">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN0-Bk-uzo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utn-AA-rcL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-lG-S0o">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ejY-9O-SXk" firstAttribute="trailing" secondItem="kow-24-4ci" secondAttribute="trailing" id="5DZ-yr-Cnx"/>
+                            <constraint firstItem="ejY-9O-SXk" firstAttribute="height" secondItem="kow-24-4ci" secondAttribute="height" id="7A7-U2-ExV"/>
+                            <constraint firstItem="H1q-lG-S0o" firstAttribute="centerY" secondItem="Utn-AA-rcL" secondAttribute="centerY" id="DOb-OM-mvJ"/>
+                            <constraint firstItem="kow-24-4ci" firstAttribute="leading" secondItem="Utn-AA-rcL" secondAttribute="trailing" constant="2" id="JJP-sb-gSI"/>
+                            <constraint firstItem="OO5-O9-koS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LIp-f1-ROa"/>
+                            <constraint firstItem="OO5-O9-koS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="214" id="X0s-kE-s6R"/>
+                            <constraint firstItem="kow-24-4ci" firstAttribute="top" secondItem="OO5-O9-koS" secondAttribute="bottom" constant="8" id="bCG-YX-tCH"/>
+                            <constraint firstItem="ejY-9O-SXk" firstAttribute="leading" secondItem="kow-24-4ci" secondAttribute="leading" id="c1f-r8-22C"/>
+                            <constraint firstItem="kow-24-4ci" firstAttribute="height" secondItem="OO5-O9-koS" secondAttribute="height" id="dub-O7-RTb"/>
+                            <constraint firstItem="ejY-9O-SXk" firstAttribute="top" secondItem="kow-24-4ci" secondAttribute="bottom" constant="71" id="p8A-C7-rY8"/>
+                            <constraint firstItem="kow-24-4ci" firstAttribute="trailing" secondItem="OO5-O9-koS" secondAttribute="trailing" id="qB3-e2-vYy"/>
+                            <constraint firstItem="Utn-AA-rcL" firstAttribute="top" secondItem="kow-24-4ci" secondAttribute="bottom" constant="31" id="rJi-eW-G69"/>
+                            <constraint firstItem="H1q-lG-S0o" firstAttribute="leading" secondItem="Utn-AA-rcL" secondAttribute="trailing" constant="20" id="re5-X3-0zg"/>
+                            <constraint firstItem="kow-24-4ci" firstAttribute="leading" secondItem="OO5-O9-koS" secondAttribute="leading" id="zmG-54-wAs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberOne" destination="OO5-O9-koS" id="nC7-wn-FRS"/>
+                        <outlet property="numberTwo" destination="kow-24-4ci" id="78X-8E-GF9"/>
+                        <outlet property="result" destination="H1q-lG-S0o" id="Oz8-c9-4de"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
