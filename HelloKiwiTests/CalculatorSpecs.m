@@ -10,6 +10,13 @@ describe(@"Calculator", ^{
             Calculator *cal = [Calculator new];
             [[theValue([cal plus:a and:b]) should] equal:theValue(4)];
         });
+        
+        it(@"-1 plus 1 should equal to 0", ^{
+            NSInteger a = -1;
+            NSInteger b = 1;
+            Calculator *cal = [Calculator new];
+            [[theValue([cal plus:a and:b]) should] equal:theValue(0)];
+        });
     });
 });
 

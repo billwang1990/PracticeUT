@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
 
 @class Calculator;
 
 @interface ViewModel : NSObject
 
 @property (nonatomic, strong) Calculator *calculator;
+- (RACSignal*) observeResult;
 
 - (NSString *)doCalculate: (NSString* )num1 with:(NSString *)num2;
 
