@@ -30,11 +30,7 @@
 }
 
 - (void)bindViewModel {
-    @weakify(self);
-    [[self.vm observeResult] subscribeNext:^(id x) {
-        @strongify(self);
-        self.result.text = x;
-    }];
+    RAC(self.result, text) = self.vm.observeResult;
 }
 
 - (IBAction)calculate:(id)sender {
